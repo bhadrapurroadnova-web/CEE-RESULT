@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find your result | Nova Education Foundation</title>
+<meta name="description" content="Check your entrance exam result and rank with Nova Education Foundation, Birtamode, Jhapa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#"><img src="novalogo.png" alt="Nova Education Foundation"></a>
+  <a class="pill" href="#finder" id="topPill">Results</a>
+</header>
+
+<main>
+  <section class="hero" id="finder">
+    <h1 id="pageTitle">Find your result</h1>
+    <p class="lead" id="pageLead">Enter your roll number to see your score and rank, and what your rank means for the next step.</p>
+    <p class="badge" id="publishedBadge"></p>
+    <p class="small" id="publishedList"></p>
+
+    <form id="resultForm" class="card" novalidate>
+      <label for="programme">Programme</label>
+      <select id="programme" required>
+        <option value="">Choose your programme</option>
+      </select>
+
+      <label for="roll">Roll number</label>
+      <input id="roll" type="text" inputmode="numeric" placeholder="e.g. 24703" autocomplete="off" required>
+      <p class="hint">Enter the roll number from your admit card.</p>
+
+      <label for="phone">Your phone number</label>
+      <div class="phone">
+        <span>+977</span>
+        <input id="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX" required>
+      </div>
+
+      <p class="error" id="formError" role="alert" hidden></p>
+      <button type="submit" class="btn">Find my result</button>
+      <p class="fine">By searching, you agree that Nova Education Foundation may save your phone number and result, and that our counsellors may call or WhatsApp you about your next steps.</p>
+    </form>
+
+    <section class="result" id="resultBox" aria-live="polite" hidden></section>
+  </section>
+</main>
+
+<footer class="foot">
+  <img src="novalogo.png" alt="Nova Education Foundation" class="foot-logo">
+  <p class="tag">Education &amp; Training Institute</p>
+
+  <div class="card contact">
+    <h2>Contact details</h2>
+    <p><strong>Address</strong><br>Birtamode-05, Jhapa, Nepal<br>Kankai Road, next to Kankai Campus</p>
+    <p><strong>Mobile</strong><br><a href="tel:+9779816931206">+977 981-6931206</a></p>
+    <p><strong>Telephone</strong><br><a href="tel:+97723590217">+977 023-590217</a></p>
+  </div>
+
+  <p class="copy">&copy; <span id="year"></span> Nova Education Foundation Pvt. Ltd.</p>
+</footer>
+
+<a class="wa" href="https://wa.me/9779816931206" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7.9-1.8c1.2.6 2.6 1 4.1 1 6.6 0 12-5.3 12-11.9S22.600 3 16 3zm0 21.800c-1.300 0-2.600-.4-3.700-1l-.5-.3-4.700 1.100 1.200-4.500-.3-.5a9.400 9.400 0 0 1-1.500-5.100C6.500 9.700 10.800 5.500 16 5.500s9.500 4.200 9.500 9.400-4.300 9.900-9.500 9.900zm5.200-7.100c-.3-.1-1.700-.8-1.900-.9-.3-.1-.4-.1-.6.100l-.9 1.100c-.2.200-.3.200-.6.100a7.800 7.800 0 0 1-3.900-3.400c-.3-.5.300-.5.800-1.600.1-.2 0-.4 0-.5l-.9-2.100c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.100-.7.300-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 1.800.8 2.500.9 3.400.7.600-.1 1.700-.7 2-1.400.2-.7.200-1.200.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
